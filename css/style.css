@@ -1260,7 +1260,7 @@ picture {
 }
 
 .footer__logo-block {
-  padding-bottom: 94px;
+/*   padding-bottom: 94px; */
   flex-direction: column;
   gap: var(--gap-1);
 }
@@ -1292,7 +1292,7 @@ picture {
 
 .footer__nav {
   justify-content: center;
-  padding-bottom: 94px;
+/*   padding-bottom: 94px; */
   margin-left: auto;
   column-gap: 109px;
 }
