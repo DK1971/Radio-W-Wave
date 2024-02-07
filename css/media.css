@@ -1,7 +1,8 @@
 /* Ширина экрана до 1200px */
 @media (max-width: 1200px) {
   .container {
-    padding: 0 100px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   /* section HEADER Styles */
@@ -22,19 +23,20 @@
     order: 3;
     margin-right: 0;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 18px;
+    padding-top: 22px;
+    padding-bottom: 19px;
     border-top: 1px solid #E6E8EC;
     border-bottom: 1px solid #E6E8EC;
   }
 
   .btn-search {
     order: 2;
+    padding-bottom: 30px;
   }
 
   /* section HERO Styles */
   .hero {
-    padding-top: 92px;
+    padding-top: 94px;
     padding-bottom: 81px;
   }
 
@@ -48,6 +50,12 @@
     right: 0;
     top: -10px;
   }
+
+  /* section PODCASTS Styles */
+  .podcasts__content {
+    padding-top: 35px;
+  }
+
 
   /* section BROADCASTS Styles */
   .broadcasts__list {
@@ -71,16 +79,21 @@
   /* section PLAYLISTS Styles */
   .playlists {
     padding-top: 96px;
-    padding-bottom: 96px;
+    padding-bottom: 94px;
   }
 
   .playlists__container {
     flex-direction: column;
+    gap: 27px;
   }
 
   .playlists__info {
     max-width: 100%;
-    top: 0;
+    top: -1px;
+  }
+
+  .playlists__container .subtitle-h2 {
+    margin-bottom: 11px;
   }
 
   .playlists__list {
@@ -103,9 +116,10 @@
   }
 
   .playlists__album {
-    padding: 0;
-    padding-top: 10px;
+    padding-top: 9px;
     padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 9px;
   }
 
   /* section ADV Styles */
@@ -114,10 +128,17 @@
   }
 
   .adv__picture {
-    position: relative;
-    top: -18px;
+    top: -20px;
     left: 3px;
     max-width: 397px;
+  }
+
+  .adv__info {
+    margin-bottom: 30px;
+  }
+
+  .adv__info::before {
+    margin-bottom: 12px;
   }
 
   .adv__promo {
@@ -125,11 +146,20 @@
   }
 
   /* section ABOUT Styles */
+  .about {
+    padding-bottom: 93px;
+  }
+
   .about__intro .subtitle-h3 {
     max-width: 539px;
+    margin-bottom: 9px;
   }
 
   .about__intro .desc {
+    max-width: 539px;
+  }
+
+  .about__author .desc  {
     max-width: 539px;
   }
 
@@ -143,14 +173,50 @@
     background-size: 255px;
     background-position: center right;
   }
+
+  /* section FOOTER Styles */
+  .footer {
+    padding-top: 94px;
+  }
+
+  .footer__buttom::before {
+    left: 0;
+  }
+
+  .footer__buttom .trade-mark {
+    padding-top: 18px;
+    padding-bottom: 5px;
+  }
+
+
 }
 
 
 /* Ширина экрана до 992px */
 @media (max-width: 992px) {
   .container {
-    padding: 0 114px;
+    padding-left: 114px;
+    padding-right: 114px;
   }
+
+  .container.footer__container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container.footer__logo-block {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+
+  .container.footer__nav {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+
 
   /* section HEADER Styles */
   .header__list {
@@ -158,7 +224,8 @@
   }
 
   .header__nav {
-    padding-top: 17px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 
   .header__links {
@@ -183,13 +250,14 @@
     flex-basis: 100%;
   }
 
-  .podcasts__content {
-    padding-top: 30px;
+  .time {
+    margin-bottom: 5px;
   }
+
 
   /* section BROADCASTS Styles */
   .broadcasts {
-    padding-bottom: 27px;
+    padding-bottom: 28px;
   }
 
   .broadcasts__container {
@@ -199,11 +267,17 @@
 
   .broadcasts__container .subtitle-h2 {
     position: relative;
-    margin-bottom: 110px;
+    margin-bottom: 121px;
+  }
+
+  .broadcasts__content {
+    padding-top: 20px;
+    padding-bottom: 18px;
   }
 
   .broadcasts__list {
     order: 2;
+    padding-top: 0;
     padding-bottom: 60px;
     max-width: 100%;
   }
@@ -230,6 +304,10 @@
     line-height: 1.55;
   }
 
+  .broadcasts__btn {
+    margin-bottom: 8px;
+  }
+
   .mic::before {
     background-size: contain;
     margin-bottom: 0;
@@ -253,7 +331,7 @@
 
   /* section PLAYLISTS Styles */
   .playlists {
-    padding-bottom: 115px;
+    padding-bottom: 112px;
   }
 
   .playlists__list {
@@ -262,7 +340,7 @@
 
   /* section ADV Styles */
   .adv {
-    padding-top: 70px;
+    padding-top: 72px;
   }
 
   .adv__block {
@@ -276,15 +354,26 @@
     flex: 1;
   }
 
+  .adv__promo .subtitle-h2 {
+    position: relative;
+    top: 3px;
+    left: -1px;
+  }
+
   .adv__info::before {
-    min-height: 18px;
+    margin-bottom: 15px;
+    min-height: 12px;
     background-image: url('../img/wave-768.png');
+  }
+
+  .price-promo {
+    margin-bottom: 26px;
   }
 
 
   /* section ABOUT Styles */
   .about {
-    padding-top: 94px;
+    padding-top: 95px;
   }
 
   .about-bg {
@@ -300,6 +389,7 @@
 
   .about__intro .subtitle-h2 {
     margin-bottom: 10px;
+    top: -2px;
   }
 
   .about__intro .desc {
@@ -335,6 +425,11 @@
     align-items: center;
   }
 
+  .container.footer__logo-block {
+    padding-bottom: 75px;
+    align-items: center;
+  }
+
   .social-link svg {
     width: 36px;
     height: 36px;
@@ -350,13 +445,18 @@
   .footer__list {
     gap: var(--gap-2);
   }
+
+  .footer__buttom::before {
+    min-height: 14px;
+  }
 }
 
 
 /* Ширина экрана до 767px */
 @media (max-width: 767px) {
   .container {
-    padding: 0 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   /* section HEADER Styles */
@@ -402,16 +502,17 @@
   }
 
   /* section FOOTER Styles */
-  .footer__logo-block {
+  .container.footer__logo-block {
+    padding-bottom: 60px;
+  }
+
+  .container.footer__nav {
     padding-bottom: 60px;
   }
 
   .footer__nav {
-    padding-bottom: 60px;
-
+    column-gap: 79px;
   }
-
-
 
 }
 
@@ -438,7 +539,7 @@
   .header__nav {
     overflow-x: scroll;
     padding: 0;
-    padding-top: 13px;
+    padding-top: 16px;
   }
 
   .header__nav::-webkit-scrollbar {
@@ -446,12 +547,13 @@
   }
 
   .header__list {
-    gap: 24px;
+    flex-wrap: nowrap;
+    gap: 27px;
   }
 
   /* section HERO Styles */
   .hero {
-    padding-top: 38px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 
@@ -473,7 +575,7 @@
 
   /* section PODCASTS Styles */
   .podcasts {
-    padding-top: 53.5px;
+    padding-top: 52.5px;
     padding-bottom: 54px;
   }
 
@@ -503,8 +605,8 @@
   }
 
   .podcasts__content {
-    padding-top: 25px;
-    padding-bottom: 25.5px;
+    padding-top: 23px;
+    padding-bottom: 27.5px;
     padding-left: 16px;
   }
 
@@ -590,8 +692,8 @@
 
   /* section BROADCASTS Styles */
   .broadcasts {
-    padding-top: 56px;
-    padding-bottom: 54px;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 
   .broadcasts__container .subtitle-h2 {
@@ -603,6 +705,7 @@
   }
 
   .broadcasts__content {
+    min-height: 97px;
     padding-top: 9.5px;
     padding-bottom: 10px;
     padding-left: 9.5px;
@@ -631,7 +734,7 @@
   /* section GUESTS Styles */
   .guests {
     padding-top: 54px;
-    padding-bottom: 55px;
+    padding-bottom: 52px;
   }
 
   .guests__container .subtitle-h2 {
@@ -644,15 +747,16 @@
   }
 
   .guests__container .desc {
+    margin-bottom: 29px;
     font-size: 14px;
     line-height: 1.55;
   }
 
   .guests__list {
-    gap: var(--gap-2);
+    gap: 28px;
   }
 
-  .guests__item {
+  .guests__item .card {
     gap: 11px;
   }
 
@@ -662,20 +766,24 @@
   }
 
   .guests__desc .desc {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.8;
   }
 
   .guests__btn {
-    padding: 8.5px 13px;
+    padding: 9px 13px;
   }
 
 
   /* section PLAYLISTS Styles */
   .playlists {
-    padding-top: 54px;
-    padding-bottom: 55px;
+    padding-top: 55px;
+    padding-bottom: 56px;
+  }
+
+  .playlists__container {
+    gap: 28px;
   }
 
   .playlists__container .subtitle-h2 {
@@ -711,7 +819,7 @@
   }
 
   .playlists__album {
-    padding: 11px 9px 7.5px 10px;
+    padding: 11px 9px 7px 10px;
     align-self: flex-start;
   }
 
@@ -722,7 +830,7 @@
   }
 
   .adv__block {
-    gap: var(--gap-1);
+    gap: 16px;
   }
 
   .adv__promo .subtitle-h2 {
@@ -731,17 +839,17 @@
   }
 
   .adv__picture {
-    top: -16px;
+    top: -17px;
     left: 1px;
   }
 
   .adv__info {
-    padding-top: 4px;
+    /* padding-top: 4px; */
     margin-bottom: 12px;
   }
 
   .adv__info::before {
-    min-height: 12px;
+    min-height: 11.5px;
     background-image: url('../img/wave.png');
   }
 
@@ -792,12 +900,13 @@
     margin-bottom: 5px;
     font-size: 14px;
     line-height: 1.3;
-    max-width: 108px;
+    max-width: 109px;
   }
 
   .about__author .desc {
     font-size: 12px;
     line-height: 1.3;
+    max-width: 113px;
   }
 
   .form__textarea {
@@ -830,22 +939,21 @@
 
   /* section FOOTER Styles */
   .footer {
-    padding-top: 54px;
+    padding-top: 55px;
   }
 
-  .footer__container {
+  .container.footer__container {
     padding-bottom: 0;
   }
 
-  .footer__logo-block {
-    padding-bottom: 49px;
+  .container.footer__logo-block {
+    padding-bottom: 48px;
   }
 
-  .footer__nav {
-    position: relative;
+  .container.footer__nav {
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin-bottom: 10px;
-    padding: 30px 32px;
-    column-gap: 79px;
     background-color: var(--black-color);
   }
 
@@ -859,6 +967,15 @@
 
   .hidden-item {
     display: flex;
+  }
+
+  .footer__buttom::before {
+    min-height: 14px;
+    background-image: url("../img/wave-footer-320.png");
+  }
+
+  .footer__buttom .trade-mark {
+    padding-top: 18px;
   }
 }
 
@@ -901,12 +1018,11 @@
   }
 
   .broadcasts__item {
-    max-width: 113px;
+    /* max-width: 113px; */
     min-height: 149px;
   }
 
   .broadcasts__img {
-    width: 100%;
     max-height: 50px;
   }
 
@@ -923,12 +1039,19 @@
   /* section ABOUT Styles */
   .about {
     padding-top: 56px;
+    padding-bottom: 50px;
   }
 
 
   /* section FOOTER Styles */
   .footer__nav {
     justify-content: flex-start;
+  }
+
+  .container.footer__nav {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 32px;
   }
 
   .footer__links {
